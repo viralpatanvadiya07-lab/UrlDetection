@@ -1,0 +1,61 @@
+url-detection-app/
+│
+├── client/ (React + Tailwind)
+│   ├── public/
+│   ├── src/
+│   │   ├── assets/
+│   │   ├── components/
+│   │   │   ├── Navbar.jsx
+│   │   │   ├── Footer.jsx
+│   │   │   ├── URLForm.jsx
+│   │   │   ├── ResultCard.jsx
+│   │   │   └── ProtectedRoute.jsx
+│   │   │
+│   │   ├── pages/
+│   │   │   ├── Home.jsx
+│   │   │   ├── Login.jsx
+│   │   │   ├── Register.jsx
+│   │   │   ├── Dashboard.jsx (User)
+│   │   │   └── AdminPanel.jsx
+│   │   │
+│   │   ├── services/
+│   │   │   └── api.js
+│   │   │
+│   │   ├── context/
+│   │   │   └── AuthContext.jsx
+│   │   │
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   │
+│   └── tailwind.config.js
+│
+├── server/ (Node + Express)
+│   ├── config/
+│   │   └── db.js
+│   │
+│   ├── controllers/
+│   │   ├── authController.js
+│   │   ├── urlController.js
+│   │   └── adminController.js
+│   │
+│   ├── models/
+│   │   ├── User.js
+│   │   ├── URL.js
+│   │   └── Report.js
+│   │
+│   ├── routes/
+│   │   ├── authRoutes.js
+│   │   ├── urlRoutes.js
+│   │   └── adminRoutes.js
+│   │
+│   ├── middleware/
+│   │   ├── authMiddleware.js
+│   │   └── roleMiddleware.js
+│   │
+│   ├── utils/
+│   │   └── urlChecker.js
+│   │
+│   ├── server.js
+│   └── .env
+│
+└── package.json
